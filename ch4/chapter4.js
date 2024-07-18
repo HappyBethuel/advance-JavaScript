@@ -210,32 +210,32 @@
 // statement, you would have to specify all the different or (||) clauses. In a switch 
 // statement, you can simply combine them by putting them on top of each other like 
 // this:
-let grade = prompt('what is your grade? A,B,C,D,E or F?')
-switch (grade) {
-    case "F":
-    case "D":
-        console.log("You've failed!");
-        break;
-    case "C":
-    case "B":
-        console.log("You've passed!");
-        break;
-    case "A":
-        console.log("Nice!");
-        break;
-    default:
-        console.log("I don't know this grade.");
-}
-//This is more readable than the alternative if-else statement:
-if (grade === "F" || grade === "D") {
-    console.log("You've failed!");
-} else if (grade === "C" || grade === "B") {
-    console.log("You've passed!");
-} else if (grade === "A") {
-    console.log("Nice!");
-} else {
-    console.log("I don't know this grade.");
-}
+// let grade = prompt('what is your grade? A,B,C,D,E or F?')
+// switch (grade) {
+//     case "F":
+//     case "D":
+//         console.log("You've failed!");
+//         break;
+//     case "C":
+//     case "B":
+//         console.log("You've passed!");
+//         break;
+//     case "A":
+//         console.log("Nice!");
+//         break;
+//     default:
+//         console.log("I don't know this grade.");
+// }
+// //This is more readable than the alternative if-else statement:
+// if (grade === "F" || grade === "D") {
+//     console.log("You've failed!");
+// } else if (grade === "C" || grade === "B") {
+//     console.log("You've passed!");
+// } else if (grade === "A") {
+//     console.log("Nice!");
+// } else {
+//     console.log("I don't know this grade.");
+// }
 // Practice exercise 4.5 
 // 1. Create a variable called prize and use a prompt to ask the user to set the 
 // value by selecting a number between 0 and 10
@@ -249,31 +249,34 @@ if (grade === "F" || grade === "D") {
 // strings and the output message string
 
 let prize = Number(prompt('choose a number between 0 and 10'))
-let messege = 'My Selection' ;
+let messege = 'My Selection';
 
-switch(prize){
+switch (prize) {
     case 1:
-    console.log('Congrats! you won Playstaion 4')
+        console.log('Congrats! you won Playstaion 4');
+        break;
     case 2:
-    console.log('Congrats! you habe won an Xbox ONE S');
+        console.log('Congrats! you habe won an Xbox ONE S');
+        break
     case 3:
-    console.log('you have won a Lenovo Laptop, wow!')
+        console.log('you have won a Lenovo Laptop, wow!');
+        break
     case 4:
-    console.log('you won a sAMSUNG TV ')
+        console.log('you won a sAMSUNG TV ')
+        break;
     case 5:
-    console.log('A car!!!!!! CONGRATS!!!')
-    case 6: 
+        console.log('A car!!!!!! CONGRATS!!!');
+        break;
+    case 6:
     case 7:
-    console.log('A trip to Germany')
+        console.log('A trip to Germany');
+        break;
     case 8:
     case 9:
     case 10:
-    console.log('A london trip to watch all Chelsea football games!!!! best prize!!!!!!!')
-
-
-
-
-
+        console.log('A london trip to watch all Chelsea football games!!!! best prize!!!!!!!')
+    default:
+    console.log("make sure you select a number in the given range ")
 
 }
-
+console.log(messege, 'is', prize)

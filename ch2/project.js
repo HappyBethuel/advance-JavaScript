@@ -12,7 +12,7 @@
 
 //************BMI PROJECT*****************/
 
-
+//utxmxm
 let userPounds = prompt('enter your weight in pounds');
 let userInches = prompt('enter your height in inches');
 //convert the values to kilos and cms
